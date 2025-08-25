@@ -1,6 +1,7 @@
 # mqtt-kafka-bridge
 A lightweight **Node.js service** that bridges **MQTT messages** to **Apache Kafka**.  
 Designed for Industrial IoT and data streaming use cases, with **Prometheus metrics** for monitoring.
+The MQTT-Kafka brige is a critical component in IIoT usecases. The data gets collected from sensors, PLCs, OPCs, Equipments etc via MQTT and sent to a central platform via MQTT. This data will be landed in a Kafka for further processing at a scale. I have personally used similar technique in several usecases. You can scale this further depending upon your requirement.
 
 ## Features
 - Consume MQTT messages from any broker
