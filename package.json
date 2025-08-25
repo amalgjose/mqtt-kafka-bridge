@@ -1,0 +1,25 @@
+{
+  "name": "mqtt-to-kafka-bridge",
+  "version": "1.0.0",
+  "description": "A lightweight bridge that consumes MQTT messages and publishes them to Kafka with Prometheus monitoring.",
+  "main": "mqtt-kafka-bridge.js",
+  "scripts": {
+    "start": "node mqtt-kafka-bridge.js",
+    "dev": "nodemon mqtt-kafka-bridge.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "mqtt": "^4.3.7",
+    "kafkajs": "^2.2.4",
+    "express": "^4.18.2",
+    "prom-client": "^14.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Amal G Jose",
+  "license": "Apache 2.0"
+}
