@@ -29,6 +29,7 @@ METRICS_PORT=3000
 # Batch settings
 BATCH_SIZE=500
 FLUSH_INTERVAL=100
+```
 
 ## Deployment
 
