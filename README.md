@@ -35,17 +35,19 @@ FLUSH_INTERVAL=100
 
 The docker-compose deploys the complete stack including MQTT Broker, Apache Kafka and Zookeeper.
 Execute the following to build the docker image and start the complete stack.
-
+```
 docker-compose up --build -d
-
+```
 ## Example Usage
 ### Publish a test message:
+```
 docker exec -it mosquitto mosquitto_pub -t iot/data -m "Hello Kafka"
-
+```
 ### Consume from Kafka:
+```
 docker exec -it kafka kafka-console-consumer.sh \
     --bootstrap-server kafka:9092 \
     --topic iiot_data \
     --from-beginning
-
+```
 
